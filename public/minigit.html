@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natnael | Software Engineer</title>
+    <link rel="icon" href="../assets/images/logo-transparent.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:wght@300;400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-background">
+    <!-- nav-bar -->
+    <div class="nav-bar lato-light">
+      <a href="../index.html">
+        <img
+          src="../assets/images/logo-transparent.svg"
+          alt="natnael's logo"
+          height="100"
+        />
+      </a>
+      <ul class="nav-panel">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li>
+          <a href="../index.html#projects-section" class="active">Projects</a>
+        </li>
+        <li><a href="../index.html#contact-section">Contact</a></li>
+      </ul>
+    </div>
+    <div class="main-flex">
+      <div class="project-paras">
+        <h1 class="lato pro-headers">MiniGit</h1>
+        <img
+          src="../assets/images/minigit-demo.png"
+          alt="minigit demo"
+          class="demo-images"
+        />
+        <h4 class="lato pro-topics">Overview:</h4>
+        <p class="lato">
+          It's a simplified Git-like version control system built in C++. It
+          allows users to track versions of files, make commits, manage
+          branches, perform merges, and compare commits. All via command-line
+          interaction and local file system operations.
+        </p>
+        <div class="pro-page-grid">
+          <div>
+            <h4 class="lato pro-topics">Technology Stack:</h4>
+            <ul class="lato pro-page-list">
+              <li>Language: C++</li>
+              <li>CLI</li>
+              <li>Hashing: Custom hash function</li>
+              <li>
+                Persistence: Store commit metadata and file blobs in local file
+                system
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="lato pro-topics">Features:</h4>
+            <ul class="lato pro-page-list">
+              <li>
+                <span class="highlight source-code-font">init</span> -
+                Initialize a MiniGit repository
+              </li>
+              <li>
+                <span class="highlight source-code-font">add "filename"</span> -
+                Stage a file for commit
+              </li>
+              <li>
+                <span class="highlight source-code-font"
+                  >commit -m "message"</span
+                >
+                - Save staged changes with a message
+              </li>
+              <li>
+                <span class="highlight source-code-font">log</span> - View
+                commit history
+              </li>
+              <li>
+                <span class="highlight source-code-font"
+                  >branch "branchname"</span
+                >
+                - Create a new branch
+              </li>
+              <li>
+                <span class="highlight source-code-font"
+                  >checkout "branch/commit"</span
+                >
+                - Switch to another branch or commit
+              </li>
+              <li>
+                <span class="highlight source-code-font">merge "branch"</span> -
+                Merge a branch into the current branch
+              </li>
+              <li>
+                <span class="highlight source-code-font"
+                  >diff "commit1" "commit2"</span
+                >
+                - Show differences between two commits
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="lato pro-topics">Development:</h4>
+        <p class="lato">
+          It was developed as a group project in Addis Ababa University to help
+          better understand how real-world systems (like Git) are underpinned by
+          DSA principles such as hashing, trees, DAGs, and file diffing.
+        </p>
+        <h4 class="lato pro-topics">Lessons Learned:</h4>
+        <ul class="lato pro-page-list">
+          <li>
+            Designed and implemented complex data structures (e.g., DAGs,
+            trees).
+          </li>
+          <li>Understood how Git works under the hood.</li>
+          <li>Command-line interface development.</li>
+          <li>
+            Experience software engineering practices like versioning, diffing,
+            and merges.
+          </li>
+        </ul>
+        <div class="btn-links lato">
+          <a
+            href="https://github.com/Nati-Hab1/DSA-Final-Project-MiniGit"
+            target="_blank"
+            class="btn"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <section class="footer lato-light">
+      <footer>
+        <p>© 2025 Natnael Habteselassie</p>
+      </footer>
+    </section>
+  </body>
+</html>
