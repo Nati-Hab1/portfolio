@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natnael | Software Engineer</title>
+    <link rel="icon" href="../assets/images/logo-transparent.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:wght@300;400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-background">
+    <!-- nav-bar -->
+    <div class="nav-bar lato-light">
+      <a href="../index.html">
+        <img
+          src="../assets/images/logo-transparent.svg"
+          alt="natnael's logo"
+          height="100"
+        />
+      </a>
+      <ul class="nav-panel">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#" class="active">Projects</a></li>
+        <li><a href="../index.html#contact-section">Contact</a></li>
+      </ul>
+    </div>
+    <h2 class="cormorant pro-page-title">Project Details</h2>
+    <div class="main-flex">
+      <div class="project-paras">
+        <h3 class="lato pro-headers">MiniGit</h3>
+        <img
+          src="../assets/images/minigit-demo.png"
+          alt="minigit demo"
+          class="demo-images"
+        />
+        <h4 class="lato pro-topics">Overview:</h4>
+        <p class="lato">
+          It's a simplified Git-like version control system built in C++. It
+          allows users to track versions of files, make commits, manage
+          branches, perform merges, and compare commits. All via command-line
+          interaction and local file system operations.
+        </p>
+        <div class="pro-page-grid">
+          <div>
+            <h4 class="lato pro-topics">Technology Stack:</h4>
+            <ul class="lato pro-page-list">
+              <li>Language: C++</li>
+              <li>CLI</li>
+              <li>Hashing: Custom hash function</li>
+              <li>
+                Persistence: Store commit metadata and file blobs in local file
+                system
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="lato pro-topics">Features:</h4>
+            <ul class="lato pro-page-list">
+              <li>
+                <span class="highlight source-code-font">init</span> -
+                Initialize a MiniGit repository
+              </li>
+              <li>
+                <span class="highlight source-code-font">add "filename"</span> -
+                Stage a file for commit
+              </li>
+              <li>
+                <span class="highlight source-code-font"
+                  >commit -m "message"</span
+                >
+                - Save staged changes with a message
+              </li>
+              <li>
+                <span class="highlight source-code-font">log</span> - View
+                commit history
+              </li>
+              <li>
+                <span class="highlight source-code-font"
+                  >branch "branchname"</span
+                >
+                - Create a new branch
+              </li>
+              <li>
+                <span class="highlight source-code-font"
+                  >checkout "branch/commit"</span
+                >
+                - Switch to another branch or commit
+              </li>
+              <li>
+                <span class="highlight source-code-font">merge "branch"</span> -
+                Merge a branch into the current branch
+              </li>
+              <li>
+                <span class="highlight source-code-font"
+                  >diff "commit1" "commit2"</span
+                >
+                - Show differences between two commits
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="lato pro-topics">Development:</h4>
+        <p class="lato">
+          It was developed as a group project in Addis Ababa University to help
+          better understand how real-world systems (like Git) are underpinned by
+          DSA principles such as hashing, trees, DAGs, and file diffing.
+        </p>
+        <h4 class="lato pro-topics">Lessons Learned:</h4>
+        <ul class="lato pro-page-list">
+          <li>
+            Designed and implemented complex data structures (e.g., DAGs,
+            trees).
+          </li>
+          <li>Understood how Git works under the hood.</li>
+          <li>Command-line interface development.</li>
+          <li>
+            Experience software engineering practices like versioning, diffing,
+            and merges.
+          </li>
+        </ul>
+        <div class="btn-links lato">
+          <a
+            href="https://github.com/Nati-Hab1/DSA-Final-Project-MiniGit"
+            target="_blank"
+            class="btn"
+            >GitHub</a
+          >
+        </div>
+        <h3 class="lato pro-headers">Language Pair Processor</h3>
+        <img
+          src="../assets/images/lang-pair-processor-demo.png"
+          alt="minigit demo"
+          class="demo-images"
+        />
+        <h4 class="lato pro-topics">Overview:</h4>
+        <p class="lato">
+          This project explores the linguistic similarities between Amharic and
+          Tigrigna by analyzing word-level and phoneme overlap between the two
+          languages. It uses Python programming and phoneme conversion tools
+          like sera, the study quantifies the degree of overlap, providing
+          insights into the structural and phonetic relationships between these
+          closely related Semitic languages.
+        </p>
+        <div class="pro-page-flex">
+          <div>
+            <h4 class="lato pro-topics">Technology Stack:</h4>
+            <ul class="lato pro-page-list">
+              <li>Language: Python</li>
+              <li>Regular Expressions</li>
+              <li>CLI</li>
+              <li>SERA-based G2P conversion</li>
+              <li>Persistence: Stores results in local file system.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="lato pro-topics">Features:</h4>
+            <ul class="lato pro-page-list">
+              <li>Data Preprocessing</li>
+              <li>Phoneme Conversion</li>
+              <li>Word-Level Comparison</li>
+              <li>Phoneme-Level Comparison</li>
+              <li>Reporting & Output</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="lato pro-topics">Development:</h4>
+        <p class="lato">
+          It was developed to quantify the degree of similarity between Amharic
+          and Tigrigna by comparing word-level and phoneme overlaps. By using
+          phoneme conversion algorithms the study provides a good explanation on
+          the linguistic relationship between the two languages.
+        </p>
+        <h4 class="lato pro-topics">Lessons Learned:</h4>
+        <ul class="lato pro-page-list">
+          <li>Linguistic Insight</li>
+          <li>Practical Python Skills</li>
+          <li>Data Analysis & Similarity Metrics</li>
+          <li>Grapheme-to-Phoneme (G2P) Conversion</li>
+        </ul>
+        <div class="btn-links lato">
+          <a
+            href="https://github.com/Nati-Hab1/Text-Processing-on-Ethiopian-Language-Pairs"
+            target="_blank"
+            class="btn"
+            >GitHub</a
+          >
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- footer -->
+    <section class="footer lato-light">
+      <footer>
+        <p>© 2025 Natnael Habteselassie</p>
+      </footer>
+    </section>
+  </body>
+</html>
