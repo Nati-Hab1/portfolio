@@ -200,7 +200,11 @@ body {
 .text-div {
   text-align: justify;
   line-height: 1.6;
-  width: 65%;
+  width: 68%;
+}
+
+.image-div img {
+  border-radius: 50%;
 }
 
 .btn-links {
@@ -271,58 +275,7 @@ body {
   margin-bottom: 0;
 }
 
-/* projects section */
-#projects-section {
-  padding-bottom: 20px;
-}
-
-.projects-intro {
-  padding-left: 3%;
-  padding-right: 3%;
-  text-align: justify;
-  line-height: 1.5;
-}
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 25px;
-}
-
-.card-link {
-  text-decoration: none;
-  color: black;
-}
-
-.project-cards {
-  padding: 10px;
-  border: 3px solid #456882;
-  border-radius: 20px;
-  width: 300px;
-  margin-top: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.project-cards:hover {
-  transform: translateY(-4px) scale(1.03);
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-cards > img {
-  border-radius: 20px;
-}
-
-.project-cards h2 {
-  font-weight: 900;
-  color: #456882;
-}
-
-.project-details {
-  text-align: justify;
-  line-height: 1.5;
-  color: #6c757d;
-}
+/* projects revised */
 
 .pro-btn-div {
   display: flex;
@@ -337,6 +290,127 @@ body {
   margin-right: 15px;
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+.projects-intro {
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.pro-hr {
+  border: 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding: 1px;
+  background-color: rgba(69, 104, 130, 0.2);
+}
+
+.pro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 1fr 1fr;
+}
+
+/*
+  grid-template-columns: repeat(3, minmax(300px,422px));
+  grid-template-rows: minmax(177px, 249px) minmax(177px, 249px);
+ */
+
+.pro-card {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  border-right: 2px solid rgba(69, 104, 130, 0.2);
+  border-bottom: 2px solid rgba(69, 104, 130, 0.2);
+}
+
+.pro-card > a {
+  text-decoration: none;
+  color: black;
+  min-width: 220px;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #456882;
+  transition: fill 0.3s ease;
+}
+
+.card-flex svg {
+  transition: transform 0.3s ease;
+}
+
+.card-flex > svg:hover {
+  color: #2b455a;
+  transform: translateY(-2px) scale(1.01);
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-details h2 {
+  margin-bottom: 0;
+  margin-right: 150px;
+  font-size: 29px;
+  color: black;
+}
+.card-details h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.view-case-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  color: #456882;
+  margin-top: 42px;
+}
+
+.view-case-div p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.view-case-div svg {
+  transition: fill 0.3s ease;
+}
+
+.view-case-div:hover {
+  color: black;
+}
+
+.last-card {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  height: fit-content;
+  margin-top: 75px;
+  margin-bottom: 95px;
+}
+
+.more-button {
+  font-size: 29px;
+  color: #456882;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  margin-bottom: 30px;
+}
+
+.more-button:hover {
+  color: #2b455a;
 }
 
 /* contact section */
@@ -533,11 +607,6 @@ body {
 
 /* projects page */
 
-.pro-page-title {
-  font-size: 34px;
-  text-align: center;
-}
-
 /* main flex from abt pages is used */
 
 .project-paras {
@@ -552,7 +621,6 @@ body {
 
 .pro-headers {
   font-weight: 400;
-  font-size: 25px;
   color: #456882;
 }
 .demo-images {
