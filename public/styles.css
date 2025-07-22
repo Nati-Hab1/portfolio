@@ -222,7 +222,7 @@ body {
   transition: transform 0.2s ease, background-color 0.3s, box-shadow 0.3s ease;
 }
 .btn-links > a:hover {
-  transform: translateY(-4px) scale(1.03);
+  transform: translateY(-2px) scale(1.03);
   background-color: #35516a;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
@@ -260,7 +260,7 @@ body {
 }
 
 .skill-card:hover {
-  transform: translateY(-4px) scale(1.03);
+  transform: translateY(-2px) scale(1.03);
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -277,7 +277,7 @@ body {
 
 /* projects revised */
 
-.pro-btn-div {
+/* .pro-btn-div {
   display: flex;
   justify-content: flex-end;
 }
@@ -290,7 +290,7 @@ body {
   margin-right: 15px;
   margin-top: 0;
   margin-bottom: 5px;
-}
+} */
 
 .projects-intro {
   padding-left: 3%;
@@ -499,7 +499,7 @@ body {
 }
 
 .contact-left button:hover {
-  transform: translateY(-4px) scale(1.03);
+  transform: translateY(-2px) scale(1.03);
   background-color: #35516a;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
@@ -535,7 +535,7 @@ body {
 }
 
 .contact-icon:hover {
-  transform: translateY(-3px) scale(1.05);
+  transform: translateY(-2px) scale(1.05);
   background-color: #35516a;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15);
 }
