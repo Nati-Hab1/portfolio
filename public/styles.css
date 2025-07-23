@@ -629,9 +629,11 @@ body {
 }
 
 .old-house {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.6);
+  width: 52vw;
+  margin-left: 11vw;
 }
 /* .demo-images:hover {
   transform: translateY(-1px) scale(1.05);
