@@ -34,7 +34,7 @@ body {
   font-style: normal;
 }
 
-/* home page */
+/*=== home page === */
 
 .hero {
   background-image: url("../assets/images/home-page-background.png");
@@ -166,6 +166,7 @@ body {
   color: #456882;
 }
 
+/* === about summary section === */
 #about-summary {
   padding-bottom: 20px;
 }
@@ -231,7 +232,7 @@ body {
   width: 90%;
 }
 
-/* skills section */
+/* === skills section === */
 .main-skills-container {
   display: flex;
   justify-content: center;
@@ -275,7 +276,7 @@ body {
   margin-bottom: 0;
 }
 
-/* projects revised */
+/* === projects revised === */
 
 /* .pro-btn-div {
   display: flex;
@@ -558,7 +559,7 @@ body {
   text-align: center;
 }
 
-/* about page */
+/* === about page === */
 .page-background {
   background-color: beige;
   /* display: flex;
@@ -571,7 +572,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .about-paragraphs {
@@ -605,7 +606,7 @@ body {
   margin-top: 5px;
 }
 
-/* projects page */
+/* === projects page === */
 
 /* main flex from abt pages is used */
 
@@ -656,6 +657,62 @@ body {
 
 .pro-page-list {
   line-height: 1.5;
+}
+
+/* FAQ'S */
+
+.faq {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.questions-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.question {
+  border-bottom: 1px solid #456882;
+}
+.question button {
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+.question p {
+  font-size: 16px;
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  margin: 0;
+  color: #2e2e2e;
+}
+.d-arrow {
+  transition: transform 0.5s ease-in;
+  color: #456882;
+}
+
+/* === a class added when button is clicked === */
+.question p.show {
+  max-height: 200px;
+  opacity: 1;
+  padding: 0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate {
+  transform: rotate(180deg);
 }
 
 /* media queries */
@@ -776,6 +833,12 @@ body {
   }
   .skill-card h2 {
     font-size: 17px;
+  }
+  .question button {
+    font-size: 16px;
+  }
+  .question p {
+    font-size: 15px;
   }
 }
 
