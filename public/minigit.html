@@ -182,11 +182,150 @@
         </div>
       </div>
     </div>
+
+    <!-- FAQ's -->
+    <section class="faq lato">
+      <div class="questions-container">
+        <div class="question">
+          <button class="faq-toggle">
+            <span
+              >How did you implement the <span class="highlight">init</span> and
+              <span class="highlight">add "filename"</span> features?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            In <span class="highlight">init</span>, I created necessary
+            directories like <span class="highlight">.minigit/objects</span> and
+            <span class="highlight">.minigit/commits</span>, and initialized
+            files like <span class="highlight">HEAD.txt</span>,
+            <span class="highlight">branches.txt</span>, and
+            <span class="highlight">index.txt</span>. In add, I read the file
+            content, generated a custom hash using
+            <span class="highlight">std::hash</span>, saved the content into the
+            <span class="highlight">objects/</span> folder, and recorded the
+            filename-hash pair in <span class="highlight">index.txt</span>.
+          </p>
+        </div>
+
+        <div class="question">
+          <button class="faq-toggle">
+            <span
+              >How were versions and
+              <span class="highlight">commits</span> managed under the
+              hood?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            Each commit stores <span class="highlight">metadata</span> (message,
+            timestamp, parent, branch) and the list of
+            <span class="highlight">staged files</span> (filename:hash). Commits
+            are saved in the <span class="highlight">commits/</span> folder
+            using a unique hash. The system uses a simple
+            <span class="highlight">DAG</span> by storing the parent hash in
+            each commit file, allowing us to trace history and support branches
+            and merges.
+          </p>
+        </div>
+
+        <div class="question">
+          <button class="faq-toggle">
+            <span
+              >How did you manage group collaboration and roles as the
+              <span class="highlight">leader</span>?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            I
+            <span class="highlight">divided the tasks based on strengths</span
+            >—for example, I handled <span class="highlight">init</span> ,
+            <span class="highlight">add</span>, and overall structure. I
+            maintained<span class="highlight"> regular syncs</span>,
+            <span class="highlight">reviewed code</span>, and managed
+            integration to ensure smooth collaboration and feature alignment.
+          </p>
+        </div>
+
+        <div class="question">
+          <button class="faq-toggle">
+            <span
+              >What <span class="highlight">DSA</span> and
+              <span class="highlight">Git</span> principles influenced your
+              design?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            We used a hash map to track file versions
+            <span class="highlight">(filename -> hash)</span>, a
+            <span class="highlight">DAG</span> structure for commit history, and
+            applied <span class="highlight">hashing</span> to detect content
+            changes. The project helped us understand Git internals like
+            <span class="highlight">staging</span>, versioning, branches, and
+            <span class="highlight">merges</span> using minimal yet effective
+            data structures.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- footer -->
     <section class="footer lato-light">
       <footer>
         <p>© 2025 Natnael Habteselassie</p>
       </footer>
     </section>
+    <!-- external js-->
+    <script src="./main.js"></script>
   </body>
 </html>
