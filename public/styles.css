@@ -724,6 +724,9 @@ body {
   .intro-flex {
     margin-top: 230px;
   }
+  .questions-container {
+    max-width: 75%;
+  }
 }
 
 @media (max-height: 600px) {
