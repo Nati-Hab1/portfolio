@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  color: white;
+  background: #456882;
+}
+
+::selection {
+  color: white;
+  background: #456882;
+}
+
 body {
   margin: 0;
   background-color: #faf9f6;
