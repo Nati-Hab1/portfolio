@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta prefix="og: http://ogp.me/ns#" />
+    <meta
+      name="description"
+      content="Natnael Habteselassie is a software engineer and full-stack developer building modern, clean, and user-friendly projects with the latest technologies."
+    />
+    <meta property="og:title" content="Natnael Habteselassie | Menesha" />
+    <meta
+      property="og:description"
+      content="Natnael Habteselassie is a software engineer and full-stack developer building modern, clean, and user-friendly projects with the latest technologies."
+    />
+    <meta property="og:url" content="https://nati-hab.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://nati-hab.netlify.app/assets/images/preview.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="nati-hab.netlify.app" />
+    <meta property="twitter:url" content="https://nati-hab.netlify.app/" />
+    <meta name="twitter:title" content="Natnael Habteselassie | Menesha" />
+    <meta
+      name="twitter:description"
+      content="Natnael Habteselassie is a software engineer and full-stack developer building modern, clean, and user-friendly projects with the latest technologies."
+    />
+    <meta
+      name="twitter:image"
+      content="https://nati-hab.netlify.app/assets/images/preview.png"
+    />
+    <title>Natnael Habteselassie | Menesha</title>
+    <link rel="icon" href="../assets/images/logo-transparent.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:wght@300;400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-background">
+    <!-- nav-bar -->
+    <div class="nav-bar lato-light">
+      <a href="../index.html">
+        <img
+          src="../assets/images/logo-transparent.svg"
+          alt="natnael's logo"
+          height="100"
+        />
+      </a>
+      <ul class="nav-panel">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li>
+          <a href="../index.html#projects-section" class="active">Projects</a>
+        </li>
+        <li><a href="../index.html#contact-section">Contact</a></li>
+      </ul>
+
+      <!-- hamburger button for mobile -->
+      <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- backdrop overlay -->
+      <div class="nav-overlay" aria-hidden="true"></div>
+
+      <!-- right-side slide-in drawer -->
+      <nav id="mobile-nav-drawer" class="nav-drawer" aria-label="Mobile Navigation">
+        <div class="nav-drawer-header">
+          <button class="nav-close-btn" aria-label="Close navigation menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="nav-drawer-links lato">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li>
+            <a href="../index.html#projects-section" class="active">Projects</a>
+          </li>
+          <li><a href="../index.html#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-flex">
+      <div class="project-paras">
+        <h1 class="lato pro-headers">Menesha</h1>
+        <img
+          src="../assets/images/menesha_cover.png"
+          alt="Menesha cover preview"
+          class="menesha-cover-img"
+        />
+
+        <h4 class="lato pro-topics">Overview:</h4>
+        <p class="lato">
+          Menesha is a platform designed to bridge the gap between ambitious startups and prospective investors. Built to streamline discovery, pitch presentations, and strategic networking, it provides entrepreneurs with intuitive tools to showcase their business models, traction, and funding requirements while enabling investors to evaluate vetted opportunities.
+        </p>
+
+        <!-- Menesha Horizontal Screenshot Carousel -->
+        <h4 class="lato pro-topics">Project Screenshots:</h4>
+        <p class="lato">
+          Browse through the user interface and core workflows of the platform below. Use the horizontal scroll or arrow controls to explore side-by-side screens:
+        </p>
+
+        <div class="menesha-carousel-container">
+          <div class="menesha-carousel-wrapper" aria-roledescription="carousel" aria-label="Menesha project screenshots">
+            <button
+              class="carousel-nav-btn prev-btn"
+              id="menesha-prev-btn"
+              aria-label="Previous screenshots"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div
+              class="menesha-carousel-track"
+              id="menesha-carousel-track"
+              tabindex="0"
+              role="region"
+              aria-label="Screenshots scrollable gallery"
+            >
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_1.jpg"
+                  alt="Menesha Screenshot 1"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_2.jpg"
+                  alt="Menesha Screenshot 2"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_3.jpg"
+                  alt="Menesha Screenshot 3"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_4.jpg"
+                  alt="Menesha Screenshot 4"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_5.jpg"
+                  alt="Menesha Screenshot 5"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_6.jpg"
+                  alt="Menesha Screenshot 6"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_7.jpg"
+                  alt="Menesha Screenshot 7"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_8.jpg"
+                  alt="Menesha Screenshot 8"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menesha-carousel-item">
+                <img
+                  src="../assets/images/menesha_9.jpg"
+                  alt="Menesha Screenshot 9"
+                  class="menesha-screenshot-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-nav-btn next-btn"
+              id="menesha-next-btn"
+              aria-label="Next screenshots"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="pro-page-grid">
+          <div>
+            <h4 class="lato pro-topics">Technology Stack:</h4>
+            <ul class="lato pro-page-list">
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive Web Design</li>
+              <li>Figma (Prototyping & UI Design)</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="lato pro-topics">Features:</h4>
+            <ul class="lato features-list">
+              <li>
+                <span class="highlight">Startup Discovery</span> - Structured catalog and portfolio showcase for emerging ventures
+              </li>
+              <li>
+                <span class="highlight">Investor Portals</span> - Filterable investor matchmaking and opportunity overview
+              </li>
+              <li>
+                <span class="highlight">Pitch Profiles</span> - Rich media pitch decks, financial metrics, and executive summaries
+              </li>
+              <li>
+                <span class="highlight">Direct Inquiry Channels</span> - Streamlined messaging and contact facilitation
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 class="lato pro-topics">Development:</h4>
+        <p class="lato">
+          Developed to solve the fragmented communication between local founders and venture capital networks. The interface focuses on clean information hierarchy, intuitive dashboards, and accessible forms to reduce friction in deal sourcing and investor due diligence.
+        </p>
+
+        <h4 class="lato pro-topics">Lessons Learned:</h4>
+        <ul class="lato pro-page-list">
+          <li>
+            Architected multi-user workflows balancing the distinct UX requirements of startups and investor personas.
+          </li>
+          <li>
+            Structured scalable dashboard components with flexible CSS grid and flexbox layouts.
+          </li>
+          <li>
+            Refined typography, data-dense card styling, and component reusability.
+          </li>
+          <li>
+            Practiced end-to-end responsive design with accessible touch and keyboard navigation.
+          </li>
+        </ul>
+
+        <div class="btn-links lato">
+          <a
+            href="https://github.com/Nati-Hab1"
+            target="_blank"
+            class="btn"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ's -->
+    <section class="faq lato">
+      <div class="questions-container">
+        <div class="question">
+          <button class="faq-toggle">
+            <span>What is the core purpose of <span class="highlight">Menesha</span>?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            Menesha is built to connect early-stage entrepreneurs with investors by offering a transparent, searchable showcase for startup pitches and investment opportunities.
+          </p>
+        </div>
+
+        <div class="question">
+          <button class="faq-toggle">
+            <span>How is <span class="highlight">responsiveness</span> handled in the Menesha UI?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            The interface employs fluid CSS grid systems, flexible media cards, and horizontal scroll carousels so dashboards remain accessible and easy to browse across phones, tablets, and desktop displays.
+          </p>
+        </div>
+
+        <div class="question">
+          <button class="faq-toggle">
+            <span>What was the focus during the <span class="highlight">design process</span>?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            The emphasis was on clear hierarchy and trust-inducing presentation—highlighting critical metrics like funding stage, traction, and industry sector without cognitive overload.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer lato-light">
+      <footer>
+        <p>© 2025 Natnael Habteselassie</p>
+      </footer>
+    </section>
+    <!-- external js-->
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -170,3 +170,46 @@ window.addEventListener("resize", () => {
   }
 });
 
+// Menesha Horizontal Screenshot Carousel Logic
+const meneshaTrack = document.getElementById("menesha-carousel-track");
+const meneshaPrevBtn = document.getElementById("menesha-prev-btn");
+const meneshaNextBtn = document.getElementById("menesha-next-btn");
+
+if (meneshaTrack && meneshaPrevBtn && meneshaNextBtn) {
+  function getScrollAmount() {
+    // Scroll roughly by the width of visible area minus a bit of margin so context is kept
+    return Math.max(meneshaTrack.clientWidth * 0.75, 280);
+  }
+
+  function updateCarouselButtons() {
+    const maxScrollLeft = meneshaTrack.scrollWidth - meneshaTrack.clientWidth;
+    const currentScroll = meneshaTrack.scrollLeft;
+
+    // Small threshold (e.g. 5px) to handle subpixel rounding
+    meneshaPrevBtn.disabled = currentScroll <= 5;
+    meneshaNextBtn.disabled = currentScroll >= maxScrollLeft - 5;
+  }
+
+  meneshaPrevBtn.addEventListener("click", () => {
+    meneshaTrack.scrollBy({
+      left: -getScrollAmount(),
+      behavior: "smooth",
+    });
+  });
+
+  meneshaNextBtn.addEventListener("click", () => {
+    meneshaTrack.scrollBy({
+      left: getScrollAmount(),
+      behavior: "smooth",
+    });
+  });
+
+  // Track scroll position to update arrow disabled states
+  meneshaTrack.addEventListener("scroll", updateCarouselButtons, { passive: true });
+  window.addEventListener("resize", updateCarouselButtons);
+
+  // Initial update
+  updateCarouselButtons();
+}
+
+
