@@ -734,16 +734,24 @@ body.drawer-open {
 .about-paragraphs {
   width: 75%;
   text-align: justify;
-  font-size: 17px;
+  font-size: 16px;
+  color: #555555;
 }
 .about-paragraphs > p {
   line-height: 1.6;
+  font-size: 16px;
+  color: #555555;
 }
 .about-paragraphs h2 {
   font-size: 34px;
+  color: #456882;
 }
 .about-paragraphs h3 {
   font-weight: 400;
+  color: #000000;
+}
+.about-paragraphs h4 {
+  color: #000000;
 }
 
 .highlight {
