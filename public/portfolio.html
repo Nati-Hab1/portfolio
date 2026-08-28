@@ -205,6 +205,101 @@
             </div>
           </div>
         </div>
+
+        <!-- Visual Design System (Color Palette) -->
+        <div class="design-system-section">
+          <h4 class="lato pro-topics">Color Palette:</h4>
+          <p class="lato">
+            The visual identity of this portfolio is rooted in personal memories and clean modern interfaces, using a thoughtful pairing of grounded earth tones and sea-blue accents.
+          </p>
+
+          <!-- Color Palette Swatches -->
+          <div class="palette-swatches-grid">
+            <!-- #456882 -->
+            <div class="color-swatch-card">
+              <div class="swatch-color-box swatch-primary-accent">
+                <span class="swatch-hex-tag">#456882</span>
+              </div>
+              <div class="swatch-info lato">
+                <span class="swatch-role-title">Primary Accent</span>
+                <p class="swatch-usage-note">Headers, active navigation, buttons, icons &amp; dividers</p>
+              </div>
+            </div>
+
+            <!-- #35516a -->
+            <div class="color-swatch-card">
+              <div class="swatch-color-box swatch-hover-shade">
+                <span class="swatch-hex-tag">#35516a</span>
+              </div>
+              <div class="swatch-info lato">
+                <span class="swatch-role-title">Hover &amp; Active State</span>
+                <p class="swatch-usage-note">Interactive button hovers and social icon states</p>
+              </div>
+            </div>
+
+            <!-- beige -->
+            <div class="color-swatch-card">
+              <div class="swatch-color-box swatch-beige-bg">
+                <span class="swatch-hex-tag swatch-dark-text">beige (#F5F5DC)</span>
+              </div>
+              <div class="swatch-info lato">
+                <span class="swatch-role-title">Primary Background</span>
+                <p class="swatch-usage-note">Base background for project pages, about page &amp; mobile drawer</p>
+              </div>
+            </div>
+
+            <!-- #faf9f6 -->
+            <div class="color-swatch-card">
+              <div class="swatch-color-box swatch-offwhite-bg">
+                <span class="swatch-hex-tag swatch-dark-text">#faf9f6</span>
+              </div>
+              <div class="swatch-info lato">
+                <span class="swatch-role-title">Off-White Neutral</span>
+                <p class="swatch-usage-note">Home page body background and clean negative space</p>
+              </div>
+            </div>
+
+            <!-- #e14434 -->
+            <div class="color-swatch-card">
+              <div class="swatch-color-box swatch-coral-highlight">
+                <span class="swatch-hex-tag">#e14434</span>
+              </div>
+              <div class="swatch-info lato">
+                <span class="swatch-role-title">Highlight Coral Accent</span>
+                <p class="swatch-usage-note">Inline highlights, focal points &amp; key term emphasis</p>
+              </div>
+            </div>
+
+            <!-- #f7f4e8 / #f7f4ec -->
+            <div class="color-swatch-card">
+              <div class="swatch-color-box swatch-surface-card">
+                <span class="swatch-hex-tag swatch-dark-text">#f7f4e8</span>
+              </div>
+              <div class="swatch-info lato">
+                <span class="swatch-role-title">Surface &amp; Contact Card</span>
+                <p class="swatch-usage-note">Contact section, screenshot viewer frame &amp; elevated surfaces</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design Decisions -->
+          <h4 class="lato pro-topics design-decisions-heading">Design Decisions &amp; Rationale:</h4>
+          <div class="rationale-grid">
+            <div class="rationale-column">
+              <h5 class="lato rationale-title"><span class="highlight">Color Harmonies:</span></h5>
+              <p class="lato rationale-text">
+                Rooted in childhood home memories, warm beige and #456882 (teal-slate) form a calming, grounded palette, while energetic coral #e14434 provides clear visual focus on highlighted achievements and takeaways without clutter.
+              </p>
+            </div>
+            <div class="rationale-column">
+              <h5 class="lato rationale-title"><span class="highlight">Visual Balance &amp; Contrast:</span></h5>
+              <p class="lato rationale-text">
+                The soft beige base reduces eye fatigue compared to stark white, while deep slate #35516a provides sufficient contrast on interactive states for accessible navigation.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="pro-page-grid">
           <div>
             <h4 class="lato pro-topics">Technology Stack:</h4>
@@ -218,13 +313,21 @@
           </div>
           <div>
             <h4 class="lato pro-topics">Features:</h4>
-            <ul class="lato pro-page-list">
+            <ul class="lato features-list">
               <li>
-                <span class="highlight">Hero Section</span> - Mainly built using
-                flexbox
+                <span class="highlight">Hero Section</span> - Editorial greeting and animated divider built with Flexbox
               </li>
               <li>
-                <span class="highlight">About Page</span> - A simple page for introduction
+                <span class="highlight">Interactive Device Tabs</span> - Multi-viewport preview switcher (Mobile, Tablet, Laptop, Desktop)
+              </li>
+              <li>
+                <span class="highlight">Screenshot Viewer</span> - In-browser responsive gallery with page switching and scrollable preview frame
+              </li>
+              <li>
+                <span class="highlight">Color Palette System</span> - Visual swatches with hex values, usage roles, and design rationale
+              </li>
+              <li>
+                <span class="highlight">Accessible Mobile Drawer</span> - Slide-in navigation menu with backdrop overlay and keyboard focus management
               </li>
             </ul>
           </div>
@@ -248,25 +351,24 @@
         <h4 class="lato pro-topics">Lessons Learned:</h4>
         <ul class="lato pro-page-list">
           <li>
-            Built responsive layouts from scratch with flexbox and CSS grid.
+            Built fully responsive layouts from scratch using semantic HTML5, modern CSS Grid, and Flexbox.
           </li>
           <li>
-            Learned to translate a Figma design into semantic, accessible HTML.
+            Designed and implemented custom interactive UI components (device tab switchers, scrollable viewport previews, and accordions) with vanilla JavaScript.
           </li>
           <li>
-            Developed an eye for typography, color theory, and visual hierarchy.
+            Learned to translate Figma wireframes into performant code while establishing a cohesive color palette and visual design system.
           </li>
           <li>
-            Applied SEO and social sharing fundamentals through meta and Open
-            Graph tags.
+            Implemented accessible navigation patterns including mobile drawers, focus management, and ARIA attributes.
           </li>
           <li>
-            Practiced deploying and maintaining a live site with Netlify.
+            Applied SEO best practices, Open Graph metadata for rich social sharing, and continuous deployment workflows with Netlify.
           </li>
         </ul>
         <div class="btn-links lato">
           <a
-            href="https://github.com/Nati-Hab1/DSA-Final-Project-MiniGit"
+            href="https://github.com/Nati-Hab1/portfolio"
             target="_blank"
             class="btn"
             >GitHub</a

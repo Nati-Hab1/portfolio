@@ -769,11 +769,14 @@ body.drawer-open {
 .project-paras {
   width: 75%;
   text-align: justify;
-  font-size: 17px;
+  font-size: 16px;
+  color: #555555;
 }
 
 .project-paras p {
   line-height: 1.6;
+  font-size: 16px;
+  color: #555555;
 }
 
 .pro-headers {
@@ -1037,7 +1040,162 @@ body.drawer-open {
 }
 
 .pro-page-list {
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #555555;
+}
+
+.pro-page-list li {
+  margin-bottom: 6px;
+}
+
+.features-list {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #555555;
+}
+
+.features-list li {
+  margin-bottom: 8px;
+}
+
+/* === Color Palette & Design System Showcase === */
+.design-system-section {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.design-decisions-heading {
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+
+/* Palette Swatches Styles */
+.palette-swatches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.color-swatch-card {
+  background: #ffffff;
+  border: 1px solid rgba(69, 104, 130, 0.18);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.color-swatch-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(69, 104, 130, 0.12);
+}
+
+.swatch-color-box {
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.swatch-hex-tag {
+  background: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.swatch-hex-tag.swatch-dark-text {
+  background: rgba(255, 255, 255, 0.9);
+  color: #222222;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.swatch-primary-accent {
+  background-color: #456882;
+}
+
+.swatch-hover-shade {
+  background-color: #35516a;
+}
+
+.swatch-beige-bg {
+  background-color: beige;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.swatch-offwhite-bg {
+  background-color: #faf9f6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.swatch-coral-highlight {
+  background-color: #e14434;
+}
+
+.swatch-surface-card {
+  background-color: #f7f4e8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.swatch-info {
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.swatch-role-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2b455a;
+  margin-bottom: 4px;
+}
+
+.swatch-usage-note {
+  font-size: 12px;
+  color: #647b8c;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Design Decisions Rationale Grid */
+.rationale-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+  margin-top: 15px;
+}
+
+.rationale-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.rationale-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.rationale-text {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #555555;
+  text-align: justify;
 }
 
 /* FAQ'S */
@@ -1071,7 +1229,7 @@ body.drawer-open {
   border: none;
   outline: none;
   font-size: 17px;
-  color: black;
+  color: #555555;
   font-weight: 500;
   cursor: pointer;
 }
@@ -1079,11 +1237,11 @@ body.drawer-open {
   font-size: 16px;
   max-height: 0;
   opacity: 0;
-  line-height: 1.5;
+  line-height: 1.6;
   overflow: hidden;
   transition: all 0.6s ease;
   margin: 0;
-  color: #2e2e2e;
+  color: #555555;
 }
 .d-arrow {
   transition: transform 0.5s ease-in;
@@ -1216,6 +1374,15 @@ body.drawer-open {
   .screenshot-viewport {
     height: 440px;
   }
+  .rationale-grid {
+    grid-template-columns: 1fr;
+  }
+  .palette-swatches-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  .design-system-card {
+    padding: 18px 14px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1269,6 +1436,21 @@ body.drawer-open {
   .screenshot-stage {
     padding: 16px 10px;
   }
+  .font-characters-display {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+  .glyph-sample {
+    font-size: 38px;
+  }
+  .char-line {
+    font-size: 12px;
+  }
+  .palette-swatches-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1295,6 +1477,10 @@ body.drawer-open {
   }
   .screenshot-scroll-hint {
     font-size: 12px;
+  }
+  .specimen-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -1324,4 +1510,5 @@ body.drawer-open {
     font-size: 12px;
   }
 }
+
 
