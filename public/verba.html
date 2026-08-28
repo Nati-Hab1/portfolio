@@ -124,11 +124,113 @@
         <!--  -->
       </div>
     </div>
-    <!-- footer -->
+
+    <!-- FAQ's -->
+    <section class="faq lato">
+      <div class="questions-container">
+        <div class="question">
+          <button class="faq-toggle">
+            <span>How does the <span class="highlight">G2P (SERA)</span> conversion work?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            It converts Ge'ez script into Latin-based phonetic representations using
+            the <span class="highlight">SERA</span> standard, standardizing characters
+            so phonetic overlap can be compared accurately regardless of spelling differences.
+          </p>
+        </div>
+
+        <div class="question">
+          <button class="faq-toggle">
+            <span>What metrics are used to measure <span class="highlight">language similarity</span>?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            The tool calculates both exact <span class="highlight">lexical (word-level)</span>
+            overlap and <span class="highlight">phoneme-level</span> similarity percentages,
+            revealing shared cognates and structural phonetic patterns.
+          </p>
+        </div>
+
+        <div class="question">
+          <button class="faq-toggle">
+            <span>How is text data <span class="highlight">cleaned and preprocessed</span>?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            Using <span class="highlight">regular expressions</span>, the pipeline strips
+            punctuation, normalizes whitespace, and filters noise to create clean,
+            comparable token lists from raw text corpora.
+          </p>
+        </div>
+
+        <div class="question">
+          <button class="faq-toggle">
+            <span>How are the analysis results <span class="highlight">presented</span>?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down d-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+          <p>
+            The <span class="highlight">CLI</span> displays summary tables and percentage
+            breakdowns directly in the terminal, while saving detailed comparison logs
+            to the local file system for further analysis.
+          </p>
+        </div>
+      </div>
+    </section>
     <section class="footer lato-light">
       <footer>
         <p>© 2025 Natnael Habteselassie</p>
       </footer>
     </section>
+    <!-- external js-->
+    <script src="./main.js"></script>
   </body>
 </html>
