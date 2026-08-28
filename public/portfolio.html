@@ -130,6 +130,9 @@
           performance and user experience.
         </p>
         <h4 class="lato pro-topics">Design & Responsiveness:</h4>
+        <p class="lato">
+          The layout was crafted with a mobile-first responsive mindset, ensuring seamless navigation and readability across various viewports. Explore how each page adapts across different devices below:
+        </p>
         <div class="device-tabs-container">
           <div class="device-tabs" role="tablist" aria-label="Device selection">
             <button
@@ -164,6 +167,42 @@
             >
               Desktop
             </button>
+          </div>
+        </div>
+
+        <!-- Responsive Screenshot Viewer -->
+        <div class="screenshot-viewer-container">
+          <div class="screenshot-viewer-header">
+            <div class="screenshot-page-tabs" role="tablist" aria-label="Screenshot page selector">
+              <button class="screenshot-page-btn active lato" data-page="1">Home</button>
+              <button class="screenshot-page-btn lato" data-page="2">About</button>
+              <button class="screenshot-page-btn lato" data-page="3">Project</button>
+            </div>
+            <div class="screenshot-scroll-hint lato">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+              </svg>
+              <span>Scroll to see more</span>
+            </div>
+          </div>
+          <div class="screenshot-viewport" id="screenshot-viewport">
+            <div class="screenshot-stage">
+              <img
+                id="screenshot-image"
+                src="../assets/images/mobile_screenshot_page_1.png"
+                alt="Mobile screenshot Home page"
+                class="screenshot-img device-mobile"
+              />
+            </div>
+            <div class="screenshot-empty-state lato" id="screenshot-empty" style="display: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="14" x="2" y="3" rx="2"/>
+                <line x1="8" x2="16" y1="21" y2="21"/>
+                <line x1="12" x2="12" y1="17" y2="21"/>
+              </svg>
+              <p class="empty-title">Desktop Screenshots Coming Soon</p>
+              <p class="empty-subtitle">Desktop viewport captures will appear here once captured.</p>
+            </div>
           </div>
         </div>
         <div class="pro-page-grid">

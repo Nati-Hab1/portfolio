@@ -847,6 +847,185 @@ body.drawer-open {
   box-shadow: 0 4px 12px rgba(69, 104, 130, 0.25);
 }
 
+/* === Responsive Screenshot Viewer === */
+.screenshot-viewer-container {
+  background: #f7f4ec;
+  border: 1px solid rgba(69, 104, 130, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(69, 104, 130, 0.08);
+  margin-bottom: 45px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.screenshot-viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: rgba(69, 104, 130, 0.07);
+  border-bottom: 1px solid rgba(69, 104, 130, 0.15);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.screenshot-page-tabs {
+  display: inline-flex;
+  background: rgba(69, 104, 130, 0.08);
+  border: 1px solid rgba(69, 104, 130, 0.15);
+  border-radius: 25px;
+  padding: 3px 4px;
+  gap: 4px;
+}
+
+.screenshot-page-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #456882;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.screenshot-page-btn:hover:not(.active) {
+  background-color: rgba(69, 104, 130, 0.12);
+  color: #2b455a;
+}
+
+.screenshot-page-btn.active {
+  background-color: #456882;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(69, 104, 130, 0.25);
+}
+
+.screenshot-scroll-hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #647b8c;
+  user-select: none;
+}
+
+.screenshot-scroll-hint svg {
+  animation: bounceHint 1.8s infinite ease-in-out;
+  color: #456882;
+}
+
+@keyframes bounceHint {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+.screenshot-viewport {
+  height: 520px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ece7dc;
+  position: relative;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar for viewer */
+.screenshot-viewport::-webkit-scrollbar {
+  width: 8px;
+}
+
+.screenshot-viewport::-webkit-scrollbar-track {
+  background: rgba(69, 104, 130, 0.05);
+}
+
+.screenshot-viewport::-webkit-scrollbar-thumb {
+  background: rgba(69, 104, 130, 0.35);
+  border-radius: 4px;
+}
+
+.screenshot-viewport::-webkit-scrollbar-thumb:hover {
+  background: rgba(69, 104, 130, 0.6);
+}
+
+.screenshot-stage {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.screenshot-img {
+  display: block;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: opacity 0.25s ease;
+  object-fit: contain;
+}
+
+/* Device-specific sizing within the viewer */
+.screenshot-img.device-mobile {
+  width: 320px;
+  max-width: 90%;
+}
+
+.screenshot-img.device-tablet {
+  width: 580px;
+  max-width: 95%;
+}
+
+.screenshot-img.device-laptop,
+.screenshot-img.device-desktop {
+  width: 100%;
+  max-width: 850px;
+}
+
+/* Empty State */
+.screenshot-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 400px;
+  text-align: center;
+  padding: 40px 20px;
+  color: #647b8c;
+  box-sizing: border-box;
+}
+
+.screenshot-empty-state svg {
+  color: #456882;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+.empty-title {
+  font-size: 19px;
+  font-weight: 500;
+  color: #456882;
+  margin: 0 0 8px 0;
+}
+
+.empty-subtitle {
+  font-size: 15px;
+  color: #7a8d9a;
+  max-width: 380px;
+  margin: 0;
+  line-height: 1.5;
+}
+
 .pro-page-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -1031,6 +1210,12 @@ body.drawer-open {
     padding: 8px 16px;
     font-size: 15px;
   }
+  .screenshot-viewer-header {
+    justify-content: center;
+  }
+  .screenshot-viewport {
+    height: 440px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1078,6 +1263,12 @@ body.drawer-open {
     padding: 7px 12px;
     font-size: 14px;
   }
+  .screenshot-viewport {
+    height: 380px;
+  }
+  .screenshot-stage {
+    padding: 16px 10px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1097,6 +1288,13 @@ body.drawer-open {
   .device-tab-btn {
     padding: 6px 10px;
     font-size: 13px;
+  }
+  .screenshot-page-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .screenshot-scroll-hint {
+    font-size: 12px;
   }
 }
 
