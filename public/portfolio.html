@@ -59,6 +59,58 @@
         </li>
         <li><a href="../index.html#contact-section">Contact</a></li>
       </ul>
+
+      <!-- hamburger button for mobile -->
+      <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- backdrop overlay -->
+      <div class="nav-overlay" aria-hidden="true"></div>
+
+      <!-- right-side slide-in drawer -->
+      <nav id="mobile-nav-drawer" class="nav-drawer" aria-label="Mobile Navigation">
+        <div class="nav-drawer-header">
+          <button class="nav-close-btn" aria-label="Close navigation menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="nav-drawer-links lato">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li>
+            <a href="../index.html#projects-section" class="active">Projects</a>
+          </li>
+          <li><a href="../index.html#contact-section">Contact</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="main-flex">
       <div class="project-paras">

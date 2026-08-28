@@ -27,3 +27,74 @@ deviceTabButtons.forEach((tabBtn) => {
   });
 });
 
+// Mobile Hamburger & Side Navigation Drawer
+const hamburgerBtn = document.querySelector(".nav-hamburger");
+const drawerCloseBtn = document.querySelector(".nav-close-btn");
+const navDrawer = document.querySelector(".nav-drawer");
+const navOverlay = document.querySelector(".nav-overlay");
+const drawerLinks = document.querySelectorAll(".nav-drawer-links a");
+
+function openDrawer() {
+  if (!navDrawer || !navOverlay) return;
+  navDrawer.classList.add("open");
+  navOverlay.classList.add("active");
+  document.body.classList.add("drawer-open");
+  if (hamburgerBtn) {
+    hamburgerBtn.setAttribute("aria-expanded", "true");
+  }
+  if (drawerCloseBtn) {
+    drawerCloseBtn.focus();
+  }
+}
+
+function closeDrawer() {
+  if (!navDrawer || !navOverlay) return;
+  navDrawer.classList.remove("open");
+  navOverlay.classList.remove("active");
+  document.body.classList.remove("drawer-open");
+  if (hamburgerBtn) {
+    hamburgerBtn.setAttribute("aria-expanded", "false");
+    hamburgerBtn.focus();
+  }
+}
+
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener("click", () => {
+    const isOpen = navDrawer && navDrawer.classList.contains("open");
+    if (isOpen) {
+      closeDrawer();
+    } else {
+      openDrawer();
+    }
+  });
+}
+
+if (drawerCloseBtn) {
+  drawerCloseBtn.addEventListener("click", closeDrawer);
+}
+
+if (navOverlay) {
+  navOverlay.addEventListener("click", closeDrawer);
+}
+
+// Close drawer on pressing Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && navDrawer && navDrawer.classList.contains("open")) {
+    closeDrawer();
+  }
+});
+
+// Close drawer when any navigation link inside is clicked
+drawerLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeDrawer();
+  });
+});
+
+// Close drawer if window is resized beyond mobile breakpoint
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768 && navDrawer && navDrawer.classList.contains("open")) {
+    closeDrawer();
+  }
+});
+
